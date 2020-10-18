@@ -6,7 +6,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
 //importamos los routes
 const indexRoutes_1 = __importDefault(require("./routes/indexRoutes"));
-//import productosRoutes from './routes/productosRoutes';
+const productosRoutes_1 = __importDefault(require("./routes/productosRoutes"));
 class Server {
     constructor() {
         //Inicializar express
@@ -22,6 +22,7 @@ class Server {
     //usamos la ruta configurada en indexRoutes.ts
     routes() {
         this.app.use(indexRoutes_1.default);
+        this.app.use('/api/productos', productosRoutes_1.default);
     }
     //Inicializar el servidor
     start() {

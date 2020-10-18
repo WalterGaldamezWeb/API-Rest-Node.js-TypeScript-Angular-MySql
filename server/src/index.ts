@@ -2,7 +2,7 @@ import express, { Application } from 'express';
 
 //importamos los routes
 import indexRoutes from './routes/indexRoutes';
-//import productosRoutes from './routes/productosRoutes';
+import productosRoutes from './routes/productosRoutes';
 
 class Server {
 
@@ -22,6 +22,7 @@ class Server {
     //usamos la ruta configurada en indexRoutes.ts
     routes () : void {
         this.app.use(indexRoutes);
+        this.app.use('/api/productos', productosRoutes);
     }
     //Inicializar el servidor
     start () : void {
