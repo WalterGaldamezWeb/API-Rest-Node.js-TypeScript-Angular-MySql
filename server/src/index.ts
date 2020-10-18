@@ -1,5 +1,9 @@
 import express, { Application } from 'express';
 
+//importamos los routes
+import indexRoutes from './routes/indexRoutes';
+//import productosRoutes from './routes/productosRoutes';
+
 class Server {
 
     app : Application;
@@ -15,9 +19,9 @@ class Server {
         //si existen un puerto en el servidor lo usa sino usara el 3000
         this.app.set('port', process.env.PORT || 3000);
     }
-
+    //usamos la ruta configurada en indexRoutes.ts
     routes () : void {
-
+        this.app.use(indexRoutes);
     }
     //Inicializar el servidor
     start () : void {
