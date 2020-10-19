@@ -1,13 +1,20 @@
 "use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
 Object.defineProperty(exports, "__esModule", { value: true });
-const databaseConexion_1 = __importDefault(require("../databaseConexion"));
 class ProductosControlador {
-    productos(req, res) {
-        databaseConexion_1.default.query('DESCRIBE productos');
-        res.json('productos en db');
+    todosProductos(req, res) {
+        res.json({ text: 'Listado de productos' });
+    }
+    productoId(req, res) {
+        res.json({ text: 'producto ' + req.params.id });
+    }
+    crearProducto(req, res) {
+        res.json({ text: 'producto creado' });
+    }
+    actualizarProducto(req, res) {
+        res.json({ text: 'producto actualizado' + req.params.id });
+    }
+    eliminarProducto(req, res) {
+        res.json({ text: 'producto eliminado' + req.params.id });
     }
 }
 const PRODUCTOS_CONTROLADOR = new ProductosControlador();

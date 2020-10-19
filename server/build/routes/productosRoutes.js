@@ -12,7 +12,11 @@ class ProductosRoutes {
     }
     //Configuracion de la ruta inicial '/' y lo que devuelve
     config() {
-        this.router.get('/', productosControlador_1.default.productos);
+        this.router.get('/', productosControlador_1.default.todosProductos);
+        this.router.get('/:id', productosControlador_1.default.productoId);
+        this.router.post('/', productosControlador_1.default.crearProducto);
+        this.router.put('/:id', productosControlador_1.default.actualizarProducto);
+        this.router.delete('/:id', productosControlador_1.default.eliminarProducto);
     }
 }
 const PRODUCTOS_ROUTES = new ProductosRoutes();
