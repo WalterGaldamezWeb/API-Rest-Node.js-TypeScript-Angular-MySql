@@ -1,1 +1,14 @@
-<p>lista-productos works!</p>
+<div class="row">
+  <div class="col" *ngFor="let producto of productos">
+    <div class="card mt-4" style="width: 18rem;">
+      <img [src]="producto.imagen" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{ producto.nombre }}</h5>
+        <p class="card-text">{{ producto.descripcion }}</p>
+        <a href="#" class="btn btn-primary">Editar</a>
+        <a href="#" class="btn btn-danger ml-2">Eliminar</a>
+      </div>
+    </div>
+  </div>
+</div>
+

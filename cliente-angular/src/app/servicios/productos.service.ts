@@ -9,11 +9,9 @@ import { Producto } from '../modelos/producto';
 })
 export class ProductosService {
 
-  API_URI = 'http://localhost/api';
+  API_URI = 'http://localhost:3000/api';
 
-  constructor(private productoServicio:ProductosService,
-              private http:HttpClient
-    ) { }
+  constructor(private http:HttpClient) { }
 
   obtenerTodosProductos () {
     return this.http.get(`${this.API_URI}/productos`);
