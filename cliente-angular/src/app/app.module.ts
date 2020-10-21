@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { NavegacionComponent } from './componentes/navegacion/navegacion.component';
 import { FormularioProductosComponent } from './componentes/formulario-productos/formulario-productos.component';
 import { ListaProductosComponent } from './componentes/lista-productos/lista-productos.component';
+import { ProductosService } from './servicios/productos.service';
+
 
 @NgModule({
   declarations: [
@@ -18,7 +20,7 @@ import { ListaProductosComponent } from './componentes/lista-productos/lista-pro
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [ProductosService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
