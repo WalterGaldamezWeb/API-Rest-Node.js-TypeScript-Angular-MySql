@@ -1,1 +1,31 @@
-<p>formulario-productos works!</p>
+<div class="row">
+  <div class="col-md-4 offset-md-1">
+    <div class="card mt-4" style="width: 18rem;">
+      <form class="p-3">
+        <div class="form-group">
+          <input [(ngModel)]="producto.nombre" type="text" name="nombre" placeholder="Nombre Producto" class="form-control" autofocus>
+        </div>
+        <div class="form-group">
+          <textarea [(ngModel)]="producto.descripcion" name="descripcion" placeholder="Descripción" class="form-control" rows="2"></textarea>
+        </div>
+        <div class="form-group">
+          <input [(ngModel)]="producto.imagen" type="url" name="imagen" placeholder="Url Imagen" class="form-control">
+        </div>
+        <button type="submit" class="btn btn-primary btn-block" (click)="guardarProducto()">Agregar</button>
+      </form>
+    </div>
+  </div>
+  <div class="col-md-4 offset-md-1">
+  <div class="card mt-4" style="width: 18rem;">
+    <img [src]="producto.imagen == '' ? '/assets/imagen/noimagen.png' : producto.imagen" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{ producto.nombre == '' ? 'Nombre Producto' : producto.nombre}}</h5>
+      <p class="card-text">{{ producto.descripcion == '' ? 'Descripción' : producto.descripcion }}</p>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+
