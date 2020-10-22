@@ -5,8 +5,8 @@
       <div class="card-body">
         <h5 class="card-title">{{ producto.nombre }}</h5>
         <p class="card-text">{{ producto.descripcion }}</p>
-        <a href="#" class="btn btn-primary"><i class="fas fa-edit"></i></a>
-        <a href="#" class="btn btn-danger ml-2"><i class="fas fa-trash-alt"></i></a>
+        <a class="btn btn-primary"><i class="fas fa-edit"></i></a>
+        <a class="btn btn-danger ml-2" (click)="eliminarProducto(producto.id)"><i class="fas fa-trash-alt"></i></a>
       </div>
     </div>
   </div>

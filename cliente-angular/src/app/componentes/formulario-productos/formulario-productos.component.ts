@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Producto } from '../../modelos/producto';
 import { ProductosService } from '../../servicios/productos.service';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-formulario-productos',
@@ -17,7 +19,7 @@ export class FormularioProductosComponent implements OnInit {
     fecha_creacion : new Date()
   };
 
-  constructor(private servicio:ProductosService) { }
+  constructor(private servicio:ProductosService, private router:Router) { }
 
   ngOnInit(): void {
 
@@ -27,7 +29,10 @@ export class FormularioProductosComponent implements OnInit {
     delete this.producto.id;
     delete this.producto.fecha_creacion;
     this.servicio.guardarProducto(this.producto).subscribe(
-      res => console.log(res),
+      res => {
+        console.log(res);
+        this.router.navigate(['/productos']);
+      },
       err => console.error(err)
     );
   }

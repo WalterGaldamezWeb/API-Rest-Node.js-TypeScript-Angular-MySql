@@ -15,9 +15,23 @@ export class ListaProductosComponent implements OnInit {
   constructor(private servicio:ProductosService) { }
 
   ngOnInit(): void {
+    this.obtenerTodosProductos();
+  }
+
+  obtenerTodosProductos () {
     this.servicio.obtenerTodosProductos().subscribe(
       res => {
         this.productos = res;
+      },
+      err => console.error(err)
+    );
+  }
+
+  eliminarProducto (id:string) {
+    this.servicio.eliminarProducto(id).subscribe(
+      res => {
+        console.log('producto eliminado');
+        this.obtenerTodosProductos();
       },
       err => console.error(err)
     );
