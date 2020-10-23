@@ -3,6 +3,7 @@ import { Producto } from 'src/app/modelos/producto';
 import { ProductosService } from '../../servicios/productos.service';
 
 
+
 @Component({
   selector: 'app-lista-productos',
   templateUrl: './lista-productos.component.html',
@@ -36,5 +37,4 @@ export class ListaProductosComponent implements OnInit {
       err => console.error(err)
     );
   }
-
 }

@@ -1,12 +1,14 @@
-<div class="row mb-4">
-  <div class="col" *ngFor="let producto of productos">
-    <div class="card mt-4" style="width: 18rem;">
-      <img [src]="producto.imagen" class="card-img-top" alt="...">
+<div class="row mt-4">
+  <div class="col col-sm-6 col-md-4 col-lg-3 col-xl-3" *ngFor="let producto of productos">
+    <div class="card mt-4">
+      <img [src]="producto.imagen" class="card-img-top rounded d-block" alt="...">
       <div class="card-body">
         <h5 class="card-title">{{ producto.nombre }}</h5>
         <p class="card-text">{{ producto.descripcion }}</p>
-        <a class="btn btn-primary"><i class="fas fa-edit"></i></a>
-        <a class="btn btn-danger ml-2" (click)="eliminarProducto(producto.id)"><i class="fas fa-trash-alt"></i></a>
+        <div class="">
+          <a class="btn btn-primary btn-block" [routerLink]="[ '/productos/editar-producto', producto.id ]"><i class="fas fa-edit"></i> Editar</a>
+          <a class="btn btn-danger btn-block" (click)="eliminarProducto(producto.id)"><i class="fas fa-trash-alt"></i> Eliminar</a>
+        </div>
       </div>
     </div>
   </div>

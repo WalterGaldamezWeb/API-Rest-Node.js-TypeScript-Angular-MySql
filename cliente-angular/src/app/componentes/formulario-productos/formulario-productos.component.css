@@ -1,3 +1,9 @@
 textarea{
   max-height: 200px;
 }
+img{
+  max-width: 200px;
+}
+.descripcion{
+  min-height: 150px;
+}

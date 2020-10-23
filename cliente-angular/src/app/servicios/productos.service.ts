@@ -25,7 +25,7 @@ export class ProductosService {
     return this.http.post(`${this.API_URI}/productos`, producto);
   }
 
-  actualizarProducto (id:string, producto:Producto) {
+  actualizarProducto (id:string|number, producto:Producto) {
     return this.http.put(`${this.API_URI}/productos/${id}`, producto);
   }
 

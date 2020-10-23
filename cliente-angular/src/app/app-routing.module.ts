@@ -16,9 +16,13 @@ const routes: Routes = [
     component: ListaProductosComponent
   },
   {
-    path: 'agregar-productos',
+    path: 'productos/agregar-productos',
     component: FormularioProductosComponent
   },
+  {
+    path: 'productos/editar-producto/:id',
+    component: FormularioProductosComponent
+  }
 ];
 
 @NgModule({
