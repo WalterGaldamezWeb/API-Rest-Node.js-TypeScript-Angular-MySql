@@ -39,8 +39,6 @@ CRUD desde angular a una API REST creada con node.js y TypeScript conectada a un
 
 </details>
 
-## Como Usar ?
-
 #### Requerimientos
 1. Node.js
 2. Angular
