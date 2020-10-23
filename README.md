@@ -14,7 +14,7 @@ CRUD desde angular a una API REST creada con node.js y TypeScript conectada a un
 ## 🎨 Vista Previa
 
 <details>
-    <summary>📱 Versión Movil</summary>
+    <summary>🖥 Versión Escritorio</summary>
 
 ![](https://github.com/WalterGaldamezWeb/API-Rest-Node.js/blob/master/capturas_pantalla/01.png)
 
@@ -29,7 +29,7 @@ CRUD desde angular a una API REST creada con node.js y TypeScript conectada a un
 </details>
 
 <details>
-    <summary>🖥 Versión Escritorio</summary>
+    <summary>📱 Versión Movil</summary>
     
 ![](https://github.com/WalterGaldamezWeb/API-Rest-Node.js/blob/master/capturas_pantalla/06.png)
 
@@ -38,3 +38,20 @@ CRUD desde angular a una API REST creada con node.js y TypeScript conectada a un
 ![](https://github.com/WalterGaldamezWeb/API-Rest-Node.js/blob/master/capturas_pantalla/08.png)
 
 </details>
+
+## Como Usar ?
+
+#### Requerimientos
+1. Node.js
+2. Angular
+3. Angular CLI
+
+#### Pasos
+1. Clonar Repositorio
+2. npm install en /server y en /cliente-angular
+3. crear la base de datos... /database/database.sql
+4. desde la consola en /server ejecutar npm run dev
+5. ng serve -o
+
+
+

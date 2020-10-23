@@ -1,6 +1,6 @@
-CREATE DATABASE tienda_db;
+CREATE DATABASE productos_db;
 
-USE tienda_db;
+USE productos_db;
 
 CREATE TABLE productos(
     id INT (11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
