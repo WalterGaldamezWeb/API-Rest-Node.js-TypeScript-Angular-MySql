@@ -1,4 +1,4 @@
-## API Node.js y TypeScript + cliente Angular + MySql
+## API Rest Node.js y TypeScript + Cliente Angular + MySql
 CRUD desde angular a una API REST creada con node.js y TypeScript conectada a una Base de Datos en MySql
 
 #### Tecnologias
@@ -14,7 +14,7 @@ CRUD desde angular a una API REST creada con node.js y TypeScript conectada a un
 ## 🎨 Vista Previa
 
 <details>
-    <summary>🖥 Versión Movil</summary>
+    <summary>📱 Versión Movil</summary>
 
 ![](https://github.com/WalterGaldamezWeb/API-Rest-Node.js/blob/master/capturas_pantalla/01.png)
 
@@ -29,10 +29,12 @@ CRUD desde angular a una API REST creada con node.js y TypeScript conectada a un
 </details>
 
 <details>
-    <summary>📱 Versión Escritorio</summary>
+    <summary>🖥 Versión Escritorio</summary>
     
 ![](https://github.com/WalterGaldamezWeb/API-Rest-Node.js/blob/master/capturas_pantalla/06.png)
+
 ![](https://github.com/WalterGaldamezWeb/API-Rest-Node.js/blob/master/capturas_pantalla/07.png)
+
 ![](https://github.com/WalterGaldamezWeb/API-Rest-Node.js/blob/master/capturas_pantalla/08.png)
 
 </details>
